@@ -1,2 +1,4 @@
-package org.lotka.noteapp;public class test {
+package org.lotka.noteapp;
+
+public class test   {
 }
