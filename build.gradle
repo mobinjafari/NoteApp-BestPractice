@@ -17,7 +17,7 @@ buildscript {
         classpath Build.kotlin_gradle_plugin
         classpath 'com.google.gms:google-services:4.3.14'
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.2'
-        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath 'com.android.tools.build:gradle:3.4.3'
 
 
     }
