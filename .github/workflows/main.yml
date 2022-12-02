@@ -33,7 +33,10 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: apk  
-          
+      - name: Get App version code
+        id: version
+        run: |
+            echo "::set-output name=commits::$(git rev-list --count HEAD)"    
     
       - name: Create Release
         id: create_release
@@ -42,7 +45,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }} 
+          release_name: Release v.1.${{ steps.version.outputs.commits }} 
       - name: Upload Release APK
         id: upload_release_asset
         uses: actions/upload-release-asset@v1.0.1
