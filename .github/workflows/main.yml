@@ -34,9 +34,6 @@ jobs:
         with:
           name: apk  
           
-          
-      - name: Get version
-           run:"version_name=${{steps.android_version.outputs.VERSION_NAME}}" >> $GITHUB_ENV
     
       - name: Create Release
         id: create_release
