@@ -7,9 +7,9 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        //google.comdd
-        Toast.makeText(baseContext , "wf" , Toast.LENGTH_LONG).show()
+       // setContentView(R.layout.activity_main)
+        //changed
+
     }
 
     
